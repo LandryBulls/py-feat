@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Change Log &#8212; Py-Feat</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/changelog';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Contributing new detectors" href="modelContribution.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pyfeat_logo_small.png" class="logo__image only-light" alt="Py-Feat - Home"/>
+    <script>document.write(`<img src="../_static/pyfeat_logo_small.png" class="logo__image only-dark" alt="Py-Feat - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Py-Feat: Python Facial Expression Analysis Toolbox
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to install Py-Feat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Included pre-trained detectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="au_reference.html">Action Unit Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_guide.html">Tips, Community, and Known Issues</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic Tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../basic_tutorials/01_basics.html">1. Py-Feat basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_tutorials/02_detector_imgs.html">2. Detecting facial expressions from images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_tutorials/03_detector_vids.html">3. Detecting facial expressions from videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_tutorials/04_plotting.html">4. Visualizing Facial Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_tutorials/05_fex_analysis.html">5. Running a full analysis</a></li>
+
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/06_trainAUvisModel.html">6. Training an AU visualization model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/07_extract_labels_and_landmarks.html">7. Example labels and landmark dataset loading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/08_train_hogs.html">8. Training HOG-based AU detectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/09_test_bbox.html">9. Benchmarking Bounding Box using data</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/10_test_lands.html">10. Benchmarking Landmark models using data</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/11_test_Poseinfo.html">11. Benchmarking Pose detectors using data</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/12_test_aus.html">12. Benchmarking Action Unit detector using data</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../extra_tutorials/13_test_emos.html">13. Benchmarking pyfeat Emotion detection algorithms using data</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+
+
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contributing</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">General contributions guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modelContribution.html">Contributing new detectors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Change Log</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference external" href="https://github.com/cosanlab/py-feat">GitHub Repository</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/cosanlab/py-feat" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/cosanlab/py-feat/issues/new?title=Issue%20on%20page%20%2Fpages/changelog.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/pages/changelog.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Change Log</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Change Log</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0.7.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-identity-detector">New Identity Detector</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0.6.1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">0.6.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detector-changes"><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">0.5.1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Notes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">0.5.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new">New</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking">Breaking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fex-changes"><code class="docutils literal notranslate"><span class="pre">Fex</span></code> Changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">New</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Breaking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-changes">Development changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-fixes">General Fixes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">0.4.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#major-version-breaking-release">Major version breaking release!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">New</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking-changes">Breaking Changes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Development changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixes">Fixes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">0.3.7</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">0.3.6</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">0.2.0</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="change-log">
+<h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this heading">#</a></h1>
+</section>
+<section id="id1">
+<h1>0.7.0<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="new-identity-detector">
+<h2>New Identity Detector<a class="headerlink" href="#new-identity-detector" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Py-feat now includes an <strong>identity detector</strong> via <a class="reference external" href="https://github.com/timesler/facenet-pytorch">facenet</a>. This works by projecting each detected face in an image or video frame into a 512d embedding space and clustering these embeddings using their cosine similarity (default threshold = 0.8).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Fex</span></code> objects include an extra column containing the identity label for each face (accessible via <code class="docutils literal notranslate"><span class="pre">Fex.identities</span></code>) as well as additional columns for each of the 512 embeddings dimensions (accessible via <code class="docutils literal notranslate"><span class="pre">Fex.identity_embeddings</span></code>). Embeddings can be useful for downstream model-training tasks.</p></li>
+<li><p><strong>Note:</strong> identity embeddings are affected by facial expressions to some degree, and while our default threshold of 0.8 works well for many cases, you should adjust this to tailor it to your particular data.</p></li>
+<li><p>To save computation time, we make it possible to recompute identity labels <strong>after</strong> detection has been performed using the <code class="docutils literal notranslate"><span class="pre">.compute_identities(threshold=new_threshold)</span></code> method on <code class="docutils literal notranslate"><span class="pre">Fex</span></code> data objects. By default this returns a new <code class="docutils literal notranslate"><span class="pre">Fex</span></code> object with new labels in the <code class="docutils literal notranslate"><span class="pre">'Identity'</span></code> column, but can also overwrite itself in-place.</p></li>
+<li><p>You can also adjust the threshold at detection time using the <code class="docutils literal notranslate"><span class="pre">face_identity_threshold</span></code> keyword argument to <code class="docutils literal notranslate"><span class="pre">Detector.detect_image()</span></code> or <code class="docutils literal notranslate"><span class="pre">Detector.detect_video()</span></code>.</p></li>
+<li><p>Recomputing identity labels by changing the threshold <strong>does not</strong> change the 512d embeddings, it just adjusts how clustering is performed to get the identity labels.</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h1>0.6.1<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this heading">#</a></h2>
+<p>This version <strong>drops support for Python 3.7</strong> and fixes several dependency related issues:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/162">#162</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/176">#176</a></p></li>
+<li><p>We can now handle images with an alpha-channel by just grabbing the RGB channels (typically in png files)</p></li>
+<li><p>Update minimum <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> version requirement to ensure our viz models are loaded correctly</p></li>
+<li><p>Soft-pin <code class="docutils literal notranslate"><span class="pre">numexpr</span></code> version until this upstream pandas issue is <a class="reference external" href="https://github.com/pandas-dev/pandas/issues/54449">fixed</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id3">
+<h1>0.6.0<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
+<section id="id4">
+<h2>Notes<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>This is a large model-update release. Several users noted issues with our AU models due to problematic HOG feature extraction. We have now retrained all of our models that were affected by this issue. This version will automatically download the new model weights and use them without any additional user input.</p>
+</section>
+<section id="detector-changes">
+<h2><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes<a class="headerlink" href="#detector-changes" title="Permalink to this heading">#</a></h2>
+<p>We have made the decision to make video processing much more memory efficient at the trade-off of increased processing time. Previously <code class="docutils literal notranslate"><span class="pre">py-feat</span></code> would load all frames into RAM and then process them. This was problematic for large videos and would cause kernel panics or system freezes. Now, <code class="docutils literal notranslate"><span class="pre">py-feat</span></code> will lazy-load video-frames one at a time, which scales to videos of any length or size assuming that your system has enough RAM to hold a few frames in memory (determined by <code class="docutils literal notranslate"><span class="pre">batch_size</span></code>). However, this also makes processing videos a bit slower and GPU benefits less dramatic. We have made this trade-off in favor of an easier end-user experience, but will be watching torch’s <a class="reference external" href="https://pytorch.org/vision/stable/generated/torchvision.io.VideoReader.html#torchvision.io.VideoReader">VideoReader</a> implementation closely and likely use that in future versions.</p>
+</section>
+</section>
+<section id="id5">
+<h1>0.5.1<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h1>
+<section id="id6">
+<h2>Notes<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<p>This is a maintenance release that addresses multiple under-the-hood issues with <code class="docutils literal notranslate"><span class="pre">py-feat</span></code> failing when images or videos contain 0 faces. It addresses the following specific issues amongst others and is recommended for all users:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/153">#153</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/155">#155</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/158">#158</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/160">#160</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h1>0.5.0<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h1>
+<section id="id8">
+<h2>Notes<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<p>This is a large overhaul and refactor of some of the core testing and API functionality to make future development, maintenance, and testing easier. Notable highlights include:</p>
+<ul class="simple">
+<li><p>tighter integration with <code class="docutils literal notranslate"><span class="pre">torch</span></code> data loaders</p></li>
+<li><p>dropping <code class="docutils literal notranslate"><span class="pre">opencv</span></code> as a dependency</p></li>
+<li><p>experimental support for macOS m1 GPUs</p></li>
+<li><p>passing keyword arguments to underlying <code class="docutils literal notranslate"><span class="pre">torch</span></code> models for more control</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<section id="new">
+<h3>New<a class="headerlink" href="#new" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>you can now pass keyword arguments directly to the underlying pytorch/sklearn models on <code class="docutils literal notranslate"><span class="pre">Detector</span></code> initialization using dictionaries. For example you can do: <code class="docutils literal notranslate"><span class="pre">detector</span> <span class="pre">=</span> <span class="pre">Detector(facepose_model_kwargs={'keep_top_k':</span> <span class="pre">500})</span></code> to initialize <code class="docutils literal notranslate"><span class="pre">img2pose</span></code> to only use 500 instead of 750 features</p></li>
+<li><p>all <code class="docutils literal notranslate"><span class="pre">.detect_*</span></code> methods can also pass keyword arguments to the underlying pytorch/sklearn models, albeit these will be passed to their underlying <code class="docutils literal notranslate"><span class="pre">__call__</span></code> methods</p></li>
+<li><p>SVM AU model has been retrained with new HOG feature PCA pipeline</p></li>
+<li><p>new XGBoost AU model with new HOG feature PCA pipeline</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.detect_image</span></code> and <code class="docutils literal notranslate"><span class="pre">.detect_video</span></code> now display a <code class="docutils literal notranslate"><span class="pre">tqdm</span></code> progressbar</p></li>
+<li><p>new <code class="docutils literal notranslate"><span class="pre">skip_failed_detections</span></code> keyword argument to still generate a <code class="docutils literal notranslate"><span class="pre">Fex</span></code> object when processing multiple images and one or more detections fail</p></li>
+</ul>
+</section>
+<section id="breaking">
+<h3>Breaking<a class="headerlink" href="#breaking" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>the new default model for landmark detection was changed from <code class="docutils literal notranslate"><span class="pre">mobilenet</span></code> to <code class="docutils literal notranslate"><span class="pre">mobilefacenet</span></code>.</p></li>
+<li><p>the new default model for AU detection was changed to our new <code class="docutils literal notranslate"><span class="pre">xgb</span></code> model which gives continuous valued predictions between 0-1</p></li>
+<li><p>remove support for <code class="docutils literal notranslate"><span class="pre">fer</span></code> emotion model</p></li>
+<li><p>remove support for <code class="docutils literal notranslate"><span class="pre">jaanet</span></code> AU model</p></li>
+<li><p>remove support for <code class="docutils literal notranslate"><span class="pre">logistic</span></code> AU model</p></li>
+<li><p>remove support for <code class="docutils literal notranslate"><span class="pre">pnp</span></code> facepose detector</p></li>
+<li><p>drop support for reading and manipulating Affectiva and FACET data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.detect_image</span></code> will no longer resize images on load as the new default for <code class="docutils literal notranslate"><span class="pre">output_size=None</span></code>. If you want to process images with <code class="docutils literal notranslate"><span class="pre">batch_size</span> <span class="pre">&gt;</span> <span class="pre">1</span></code> and images differ in size, then you will be <strong>required</strong> to manually set <code class="docutils literal notranslate"><span class="pre">output_size</span></code> otherwise py-feat will raise a helpful error message</p></li>
+</ul>
+</section>
+</section>
+<section id="fex-changes">
+<h2><code class="docutils literal notranslate"><span class="pre">Fex</span></code> Changes<a class="headerlink" href="#fex-changes" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h3>New<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>new <code class="docutils literal notranslate"><span class="pre">.update_sessions()</span></code> method that returns a <strong>copy</strong> of a <code class="docutils literal notranslate"><span class="pre">Fex</span></code> frame with the <code class="docutils literal notranslate"><span class="pre">.sessions</span></code> attribute updated, making it easy to chain operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.predict()</span></code> and <code class="docutils literal notranslate"><span class="pre">.regress()</span></code> now support passing attributes to <code class="docutils literal notranslate"><span class="pre">X</span></code> and or <code class="docutils literal notranslate"><span class="pre">Y</span></code> using string names that match the attribute names:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">'emotions'</span></code> use all emotion columns (i.e. <code class="docutils literal notranslate"><span class="pre">fex.emotions</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'aus'</span></code> use all AU columns (i.e. <code class="docutils literal notranslate"><span class="pre">fex.aus</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'poses'</span></code> use all pose columns (i.e. <code class="docutils literal notranslate"><span class="pre">fex.poses</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'landmarks'</span></code> use all landmark columns (i.e. <code class="docutils literal notranslate"><span class="pre">fex.landmarks</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'faceboxes'</span></code> use all facebox columns (i.e. <code class="docutils literal notranslate"><span class="pre">fex.faceboxes</span></code>)</p></li>
+<li><p>You can also combine feature groups using a <strong>comma-separated string</strong> e.g. <code class="docutils literal notranslate"><span class="pre">fex.regress(X='emotions,poses',</span> <span class="pre">y='landmarks')</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.extract_*</span></code> methods now include <code class="docutils literal notranslate"><span class="pre">std</span></code> and <code class="docutils literal notranslate"><span class="pre">sem</span></code>. These are also included in <code class="docutils literal notranslate"><span class="pre">.extract_summary()</span></code></p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Breaking<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>All <code class="docutils literal notranslate"><span class="pre">Fex</span></code> attributes have been pluralized as indicated below. For the time-being old attribute access will continue to work but will show a warning. We plan to formally drop support in a few versions</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">.landmark</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.landmarks</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.facepose</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.poses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.input</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.inputs</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.landmark_x</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.landmarks_x</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.landmark_y</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.landmarks_y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.facebox</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">.faceboxes</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="development-changes">
+<h2>Development changes<a class="headerlink" href="#development-changes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">test_pretrained_models.py</span></code> is now more organized using <code class="docutils literal notranslate"><span class="pre">pytest</span></code> classes</p></li>
+<li><p>added tests for <code class="docutils literal notranslate"><span class="pre">img2pose</span></code> models</p></li>
+<li><p>added more robust testing for the interaction between <code class="docutils literal notranslate"><span class="pre">batch_size</span></code> and <code class="docutils literal notranslate"><span class="pre">output_size</span></code></p></li>
+</ul>
+</section>
+<section id="general-fixes">
+<h2>General Fixes<a class="headerlink" href="#general-fixes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>data loading with multiple images of potentially different sizes should be faster and more reliable</p></li>
+<li><p>fix bug in <code class="docutils literal notranslate"><span class="pre">resmasknet</span></code> that would give poor predictions when multiple faces were present and particularly small</p></li>
+<li><p>#150</p></li>
+<li><p>#149</p></li>
+<li><p>#148</p></li>
+<li><p>#147</p></li>
+<li><p>#145</p></li>
+<li><p>#137</p></li>
+<li><p>#134</p></li>
+<li><p>#132</p></li>
+<li><p>#131</p></li>
+<li><p>#130</p></li>
+<li><p>#129</p></li>
+<li><p>#127</p></li>
+<li><p>#121</p></li>
+<li><p>#104</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h1>0.4.0<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h1>
+<section id="major-version-breaking-release">
+<h2>Major version breaking release!<a class="headerlink" href="#major-version-breaking-release" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>This release includes numerous bug fixes, api updates, and code base changes make it largely incompatible with previous releases</p></li>
+<li><p>To fork development from an older version of <code class="docutils literal notranslate"><span class="pre">py-feat</span></code> you can use <a class="reference external" href="https://github.com/cosanlab/py-feat-archive">this archival repo</a> instead</p></li>
+</ul>
+</section>
+<section id="id13">
+<h2>New<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">animate_face</span></code> and <code class="docutils literal notranslate"><span class="pre">plot_face</span></code> functions in <code class="docutils literal notranslate"><span class="pre">feat.plotting</span></code> module</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Fex</span></code> data-classes returned from <code class="docutils literal notranslate"><span class="pre">Detector.detect_image()</span></code> or <code class="docutils literal notranslate"><span class="pre">Detector.detect_video()</span></code> now store the names of the different detectors used as attributes: <code class="docutils literal notranslate"><span class="pre">.face_model</span></code>, <code class="docutils literal notranslate"><span class="pre">.au_model</span></code>, etc</p></li>
+<li><p>The AU visualization model used by <code class="docutils literal notranslate"><span class="pre">plot_face</span></code> and <code class="docutils literal notranslate"><span class="pre">Detector.plot_detections(faces='aus')</span></code> has been updated to include AU11 and remove AU18 making it consistent with Py-feat’s custom AU detectors (<code class="docutils literal notranslate"><span class="pre">svm</span></code> and <code class="docutils literal notranslate"><span class="pre">logistic</span></code>)</p></li>
+<li><p>A new AU visualization model supporting the <code class="docutils literal notranslate"><span class="pre">jaanet</span></code> AU detector, which only has 12 AUs, has now been added and will automatically be used if <code class="docutils literal notranslate"><span class="pre">Detector(au_model='jaanet')</span></code>.</p>
+<ul>
+<li><p>This visualization model can also be used by the <code class="docutils literal notranslate"><span class="pre">plot_face</span></code> function by by passing it to the <code class="docutils literal notranslate"><span class="pre">model</span></code> argument: <code class="docutils literal notranslate"><span class="pre">plot_face(model='jaanet_aus_to_landmarks')</span></code></p></li>
+</ul>
+</li>
+</ul>
+<section id="breaking-changes">
+<h3>Breaking Changes<a class="headerlink" href="#breaking-changes" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Detector</span></code> no longer support unintialized models, e.g. <code class="docutils literal notranslate"><span class="pre">any_model</span> <span class="pre">=</span> <span class="pre">None</span></code></p>
+<ul>
+<li><p>This is is also true for <code class="docutils literal notranslate"><span class="pre">Detector.change_model</span></code></p></li>
+</ul>
+</li>
+<li><p>Columns of interest on <code class="docutils literal notranslate"><span class="pre">Fex</span></code> data classes were previously accessed like class <em>methods</em>, i.e. <code class="docutils literal notranslate"><span class="pre">fex.aus()</span></code>. These have now been changed to class <em>attributes</em>, i.e. <code class="docutils literal notranslate"><span class="pre">fex.aus</span></code></p></li>
+<li><p>Remove support for <code class="docutils literal notranslate"><span class="pre">DRML</span></code> AU detector</p></li>
+<li><p>Remove support for <code class="docutils literal notranslate"><span class="pre">RF</span></code> AU and emotion detectors</p></li>
+<li><p>New default detectors:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">svm</span></code> for AUs</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resmasknet</span></code> for emotions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">img2pose</span></code> for head-pose</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id14">
+<h2>Development changes<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Revamped pre-trained detector handling in new <code class="docutils literal notranslate"><span class="pre">feat.pretrained</span></code> module</p></li>
+<li><p>More tests including testing all detector combinations</p></li>
+</ul>
+</section>
+<section id="fixes">
+<h2>Fixes<a class="headerlink" href="#fixes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/80">#80</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/81">#81</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/94">#94</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/98">#98</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/101">#101</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/106">#106</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/110">#110</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/113">#113</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/114">#114</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/118">#118</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/119">#119</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cosanlab/py-feat/issues/125">#125</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id15">
+<h1>0.3.7<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Fix import error due to missing init</p></li>
+</ul>
+</section>
+<section id="id16">
+<h1>0.3.6<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Trigger Zenodo release</p></li>
+</ul>
+</section>
+<section id="id17">
+<h1>0.2.0<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Testing pypi upload</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="modelContribution.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Contributing new detectors</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Change Log</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">0.7.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-identity-detector">New Identity Detector</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">0.6.1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">0.6.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detector-changes"><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">0.5.1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Notes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">0.5.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">Detector</span></code> Changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new">New</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking">Breaking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fex-changes"><code class="docutils literal notranslate"><span class="pre">Fex</span></code> Changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">New</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Breaking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-changes">Development changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-fixes">General Fixes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">0.4.0</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#major-version-breaking-release">Major version breaking release!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">New</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#breaking-changes">Breaking Changes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Development changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fixes">Fixes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">0.3.7</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">0.3.6</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">0.2.0</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Eshin Jolly, Jin Hyun Cheong, Tiankang Xie, Luke J. Chang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
